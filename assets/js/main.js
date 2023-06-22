@@ -12335,7 +12335,7 @@ function App() {
       ] }),
       !isVideoRecording && /* @__PURE__ */ jsxRuntimeExports.jsx("button", { className: isScreenRecording ? "btn btn-danger" : "btn", onClick: startOrStopScreenRecord, children: isScreenRecording ? `Stop Screen Recording ( ${getRecordedScreenTimeAsClock()} )` : "Start Screen Recording" })
     ] }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "chathead-container", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "chathead", children: /* @__PURE__ */ jsxRuntimeExports.jsx("video", { muted: true, preload: "auto", loop: true, autoPlay: true, src: "https://wpwax.com/wp-content/uploads/2022/12/HelpGent.mp4" }) }) })
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "chathead-container", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "chathead", children: /* @__PURE__ */ jsxRuntimeExports.jsx("video", { muted: true, preload: "auto", loop: true, autoPlay: true, playsInline: true, src: "https://wpwax.com/wp-content/uploads/2022/12/HelpGent.mp4" }) }) })
   ] });
 }
 const index = "";
