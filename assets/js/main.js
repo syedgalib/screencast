@@ -12320,10 +12320,10 @@ function App() {
   }
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "box-container", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "video-container", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "video-wrap", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("video", { style: { display: isStreamingVideo ? "block" : "none" }, ref: videoStreamRef, muted: true }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("video", { style: { display: isScreenRecording ? "block" : "none" }, ref: screenVideoStreamRef, muted: true }),
-      recordedVideoURL.length ? /* @__PURE__ */ jsxRuntimeExports.jsx("video", { src: recordedVideoURL, controls: true }) : "",
-      recordedScreenURL.length ? /* @__PURE__ */ jsxRuntimeExports.jsx("video", { src: recordedScreenURL, controls: true }) : ""
+      /* @__PURE__ */ jsxRuntimeExports.jsx("video", { style: { display: isStreamingVideo ? "block" : "none" }, ref: videoStreamRef, muted: true, playsInline: true }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("video", { style: { display: isScreenRecording ? "block" : "none" }, ref: screenVideoStreamRef, muted: true, playsInline: true }),
+      recordedVideoURL.length ? /* @__PURE__ */ jsxRuntimeExports.jsx("video", { src: recordedVideoURL, controls: true, playsInline: true }) : "",
+      recordedScreenURL.length ? /* @__PURE__ */ jsxRuntimeExports.jsx("video", { src: recordedScreenURL, controls: true, playsInline: true }) : ""
     ] }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "actions", children: [
       !isScreenRecording && !isVideoRecording && !isStreamingVideo && /* @__PURE__ */ jsxRuntimeExports.jsx("button", { className: "btn", onClick: previewVideoStream, children: "Preview Video Recording" }),

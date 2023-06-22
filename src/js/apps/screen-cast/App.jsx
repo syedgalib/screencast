@@ -110,10 +110,10 @@ function App() {
     <div className='box-container'>
       <div className="video-container">
         <div className="video-wrap">
-          <video style={{display: isStreamingVideo ? 'block' : 'none'}} ref={videoStreamRef} muted></video>
-          <video style={{display: isScreenRecording ? 'block' : 'none'}} ref={screenVideoStreamRef} muted></video>
-          { recordedVideoURL.length ? <video src={recordedVideoURL} controls></video> : '' }
-          { recordedScreenURL.length ? <video src={recordedScreenURL} controls></video> : '' }
+          <video style={{display: isStreamingVideo ? 'block' : 'none'}} ref={videoStreamRef} muted playsInline></video>
+          <video style={{display: isScreenRecording ? 'block' : 'none'}} ref={screenVideoStreamRef} muted playsInline></video>
+          { recordedVideoURL.length ? <video src={recordedVideoURL} controls playsInline></video> : '' }
+          { recordedScreenURL.length ? <video src={recordedScreenURL} controls playsInline></video> : '' }
         </div>
       </div>
 
