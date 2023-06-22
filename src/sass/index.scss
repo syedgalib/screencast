@@ -1,13 +1,110 @@
 body {
+  position: relative;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #f2f2f2;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  > * {
+    flex-grow: 1;
+  }
+}
+
+.btn {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #000;
+  transition: all ease-in-out 300ms;
+  background: #f2f2f2;
+  &:hover {
+    background: #cecece;
+  }
+  &:focus, &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-danger {
+  color: #fff;
+  background: #e66f6f;
+  &:hover {
+    background: #da4343;
+  }
+}
+
+.video-container {
+  position: relative; 
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #000;
+}
+
+.video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.box-container {
+  width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.actions {
+  margin: 10px 0;
+}
+
+.chathead-container {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.chathead {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 8px 10px rgba(0,0,0,0.2);
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
