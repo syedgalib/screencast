@@ -149,7 +149,7 @@ function App() {
 
       <div className="chathead-container">
         <div className="chathead">
-          <video muted preload="auto" loop autoPlay src="https://wpwax.com/wp-content/uploads/2022/12/HelpGent.mp4"></video>
+          <video muted preload="auto" loop autoPlay playsInline src="https://wpwax.com/wp-content/uploads/2022/12/HelpGent.mp4"></video>
         </div>
       </div>
     </div>
