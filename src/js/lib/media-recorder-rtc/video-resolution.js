@@ -8,9 +8,9 @@ export const resolutions = {
 	7680: { width: 7680, height: 4320, hdKey: '8K' },
 };
 
-export function getLabel( resulation ) {
-	const hd = ( resulation.hdKey ) ? ` (${resulation.hdKey})` : '';
-	return `${resulation.height}p${hd}: ${resulation.width}x${resulation.height}`;
+export function getLabel( resolution ) {
+	const hd = ( resolution.hdKey ) ? ` (${resolution.hdKey})` : '';
+	return `${resolution.height}p${hd}: ${resolution.width}x${resolution.height}`;
 }
 
 export function parseOption( key ) {
